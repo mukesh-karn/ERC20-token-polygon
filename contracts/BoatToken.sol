@@ -76,6 +76,6 @@ contract BoatToken is ERC20, ERC20Burnable, Ownable, ERC20Permit {
     }
 
     function getCurrentTime() public view returns (uint256) {
-        return block.getCurrentTime();
+        return block.timestamp;
     }
 }
